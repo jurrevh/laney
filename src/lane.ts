@@ -6,7 +6,7 @@ export default class Lane {
   }
 
   public addNumber(number: LaneNumber): void {
-
+    this.numbers.push(number);
   }
 
   public getTotal(): number {

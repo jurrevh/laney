@@ -4,14 +4,19 @@ export default class LaneNumber {
   private secret: boolean;
 
   public constructor() {
-
+    this.value = 0; // hardcoded
+    this.secret = false; // hardcoded
   }
 
   public getValue(): number {
-    return 10;
+    return this.value;
   }
 
-  public isSecret():  boolean {
-
+  /**
+   * returns whether isSecret is true or false
+    * @returns whether this lane number is secret
+   */
+  public isSecret(): boolean {
+    return this.secret;
   }
 }
